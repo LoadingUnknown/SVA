@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "3b0dd604-ba01-4c4e-8431-93ab019b35e0",
+		"name": "Mock Leaked Data Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39971930",
+		"_collection_link": "https://guru-devs.postman.co/workspace/Postman-Dev-Workspace~e928e5b9-4d3c-4e49-80be-47205e142787/collection/39971930-3b0dd604-ba01-4c4e-8431-93ab019b35e0?action=share&source=collection_link&creator=39971930"
+	},
+	"item": [
+		{
+			"name": "Leaked Data Example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://example.com/mock/leak",
+					"protocol": "http",
+					"host": [
+						"example",
+						"com"
+					],
+					"path": [
+						"mock",
+						"leak"
+					]
+				},
+				"description": "Mock endpoint for leaked data simulation"
+			},
+			"response": [
+				{
+					"name": "Mock Leaked Data Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://example.com/mock/leak",
+							"protocol": "http",
+							"host": [
+								"example",
+								"com"
+							],
+							"path": [
+								"mock",
+								"leak"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\"leaked_data\":[{\"type\":\"AWS Credentials\",\"data\":{\"aws_access_key_id\":\"AKIAEXAMPLE123456\",\"aws_secret_access_key\":\"wJalrXUtnFEMI/K7MDENG/bPxRfiCYSECRETKEY\"}},{\"type\":\"Database Connection String\",\"data\":\"postgres://admin:Sup3rS3cret@127.0.0.1:5432/mydatabase\"},{\"type\":\"API Token\",\"data\":\"sk_test_4eC39HqLyjWDarjtT1zdp7dc\"},{\"type\":\"Google Cloud\",\"data\":{\"api_key\":\"AIzaSyA-FakeAPIKeyForTesting1234\",\"client_secret\":\"GOCSPX-FakeClientSecretKey\"}},{\"type\":\"Slack Webhook\",\"data\":\"https://hooks.slack.com/services/T00000000/B00000000/FAKEWEBHOOK1234\"},{\"type\":\"SSH Private Key\",\"data\":\"-----BEGIN OPENSSH PRIVATE KEY-----\\nMIIEogIBAAKCAQEA7aFQ1ExampleKeyOnly\\n-----END OPENSSH PRIVATE KEY-----\"},{\"type\":\"JWT Secret\",\"data\":\"ThisIsASuperSecureJWTSecretForTesting12345\"},{\"type\":\"Random Password\",\"data\":\"P@ssword!123\"},{\"type\":\"Environment Variables\",\"data\":{\"DATABASE_USER\":\"admin\",\"DATABASE_PASS\":\"SuperSecretPassword\",\"DEBUG_MODE\":\"false\",\"STRIPE_SECRET\":\"sk_live_ThisLooksLegit1234\"}}]}"
+				}
+			]
+		}
+	]
+}
